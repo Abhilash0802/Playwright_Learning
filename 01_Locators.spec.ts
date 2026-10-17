@@ -1,6 +1,9 @@
+
+// https://demowebshop.tricentis.com/
+
 import {test,expect} from "@playwright/test";
-/*  
-test ("Playwright locators", async ({page}) =>{
+
+test ("locators1", async ({page}) =>{
 
    await page.goto("https://sdetqa.vercel.app/pw-locators-demo-app")
 
@@ -57,7 +60,10 @@ await altext.click() */
 
 //await page.getByTitle('Schedule automated run').click()
 
-//})
+})
+
+
+
 
 // Practice: 
 
@@ -97,8 +103,8 @@ test ("Playwright locators", async ({page}) =>{
 
 // 6. getByTitle()
 
-await expect(page.getByTitle('Home page link')).toHaveText('Home')
-await page.getByTitle('Home page link').click()
+//await expect(page.getByTitle('Home page link')).toHaveText('Home')
+//await page.getByTitle('Home page link').click()
 
 
 
