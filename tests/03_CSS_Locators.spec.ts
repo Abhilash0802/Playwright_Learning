@@ -8,7 +8,7 @@ test.describe("Demo Work Shop",() => {
     await page.goto(PageURL)
 });
 
-    test.afterAll(async({page})=>{
+    test.afterEach(async({page})=>{
       await page.close()
 });
 

@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-const PageURL= ('https://sdetqa.vercel.app/autoplay')
+const PageURL= ("https://sdetqa.vercel.app/autoplay")
 
 
 test.describe("InputBox & Radio Buttons",() => {
@@ -10,17 +10,17 @@ test.describe("InputBox & Radio Buttons",() => {
    // ProductDetails = page.locator('.product-title a');
 });
 
-    test.afterAll(async({page})=>{
+    test.afterEach(async({page})=>{
       await page.close()
 });
 
 // 1. Page Load Validation
 
-// Steps : 1. Open the URL https://sdetqa.vercel.app/autoplay.html
+// Steps : 1. Open the URL https://sdetqa.vercel.app/autoplay
 // 2. Verify text "AutoPlay" is visible
 
 test('Page Load Validation',async({page})=>{
-    await expect(page).toHaveURL('https://sdetqa.vercel.app/autoplay')
+    await expect(page).toHaveURL("https://sdetqa.vercel.app/autoplay")
     expect(page.getByText('AutoPlay',{exact:true}))
 });
 
